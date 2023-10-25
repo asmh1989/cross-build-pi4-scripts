@@ -1,0 +1,4 @@
+../qt5/qtbase/configure -release -opengl es2 -nomake examples -nomake tests -qt-host-path $HOME/raspi/qt-host -extprefix $HOME/raspi/qt-raspi -prefix /usr/local/qt6 -device linux-rasp-pi4-aarch64 -device-option CROSS_COMPILE=aarch64-linux-gnu- -- -DCMAKE_TOOLCHAIN_FILE=$HOME/raspi/toolchain64.cmake -DQT_FEATURE_xcb=ON -DFEATURE_xcb_xlib=ON -DQT_FEATURE_xlib=ON
+
+
+# ../qtbase-everywhere-src-6.4.0/configure -release -opengl es2 -nomake examples -nomake tests -qt-host-path /home/sun/qt6Host -extprefix $HOME/raspi/qt-raspi -prefix /usr/local/qt6 -device linux-rasp-pi4-aarch64 -device-option CROSS_COMPILE=aarch64-linux-gnu- -- -DCMAKE_TOOLCHAIN_FILE=$HOME/raspi/toolchain64.cmake -DQT_FEATURE_xcb=ON -DFEATURE_xcb_xlib=ON -DQT_FEATURE_xlib=ON

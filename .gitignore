@@ -1,0 +1,7 @@
+build/
+downloads/
+qt*/
+sample/
+qt5/
+
+rpi-*/
