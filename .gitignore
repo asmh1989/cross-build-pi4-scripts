@@ -5,3 +5,5 @@ sample/
 qt5/
 
 rpi-*/
+
+cmake*

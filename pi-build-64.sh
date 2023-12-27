@@ -25,17 +25,17 @@ function build_qt6_2() {
     cmake --install .
 }
 
-# build_qt6
+build_qt6
 
-# build_qt6_2 qtshadertools
+build_qt6_2 qtshadertools
 
-# build_qt6_2 qtdeclarative
+build_qt6_2 qtdeclarative
 
-# build_qt6_2 qtserialport
+build_qt6_2 qtserialport
 
-# build_qt6_2 qtvirtualkeyboard
+build_qt6_2 qtvirtualkeyboard
 
-# build_qt6_2 qtcharts
+build_qt6_2 qtcharts
 
 build_qt6_2 qtwebsockets
 

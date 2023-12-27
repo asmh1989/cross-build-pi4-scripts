@@ -13,11 +13,11 @@ cd $WORK_HOME
 function build_qt6(){
     cmake $ROOT_HOME/qt5/$1 -GNinja -DCMAKE_BUILD_TYPE=Release -DQT_BUILD_EXAMPLES=OFF -DQT_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=$HOST_DIR
     cmake --build . --parallel 8
-    # cmake --install .
+    cmake --install .
 }
 
 function build_qt6_2(){
-    mkdir $WORK_HOME/$1
+    mkdir -p $WORK_HOME/$1
     cd $WORK_HOME/$1
     $HOST_DIR/bin/qt-configure-module  $ROOT_HOME/qt5/$1
     cmake --build . --parallel 8
