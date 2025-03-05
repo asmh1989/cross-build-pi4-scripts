@@ -12,5 +12,5 @@ fi
 git config --global --add safe.directory /root/raspi/sample/$1
 echo "use version = $version  2 = $2"
 # ~/raspi/qt-pi-64/6.5.3/bin/qt-cmake ..
-~/raspi/qt-pi-64/6.6.2/bin/qt-cmake .. #-DCMAKE_BUILD_TYPE=Debug 
+~/raspi/qt-pi-64/$version/bin/qt-cmake .. #-DCMAKE_BUILD_TYPE=Debug 
 cmake --build . --parallel 8
