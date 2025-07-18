@@ -1,0 +1,54 @@
+#! /bin/bash
+ROOT_HOME=$HOME/raspi
+
+QT_SRC=$ROOT_HOME/qt5
+version=6.8.3
+HOST_DIR=$ROOT_HOME/qt-host/$version
+WORK_HOME=$ROOT_HOME/build/host-$version
+#rm -rf $WORK_HOME
+mkdir -p $WORK_HOME
+mkdir -p $HOST_DIR
+cd $WORK_HOME
+
+function build_qt6(){
+    cmake $ROOT_HOME/qt5/$1 -GNinja -DCMAKE_BUILD_TYPE=Release -DQT_BUILD_EXAMPLES=OFF -DQT_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=$HOST_DIR
+    cmake --build . --parallel 8
+    cmake --install .
+}
+
+function build_qt6_2(){
+    mkdir -p $WORK_HOME/$1
+    cd $WORK_HOME/$1
+    $HOST_DIR/bin/qt-configure-module  $ROOT_HOME/qt5/$1
+    cmake --build . --parallel 8
+    cmake --install .
+}
+
+function build_qt6_audio(){
+    rm -rf $WORK_HOME/$1
+    mkdir -p $WORK_HOME/$1
+    cd $WORK_HOME/$1
+    $HOST_DIR/bin/qt-configure-module  $ROOT_HOME/qt5/$1
+    cmake --build . --parallel 8
+    cmake --install .
+}
+
+# build_qt6 qtbase-everywhere-src-6.8.3
+
+# build_qt6_2 qtshadertools-everywhere-src-6.8.3
+
+# build_qt6_2 qtdeclarative-everywhere-src-6.8.3 
+
+# build_qt6_2 qtserialport-everywhere-src-6.8.3
+
+# build_qt6_2 qtvirtualkeyboard-everywhere-src-6.8.3
+
+# build_qt6_2 qtcharts-everywhere-src-6.8.3
+
+# build_qt6_2 qtwebsockets-everywhere-src-6.8.3
+
+# build_qt6_2 qtwayland-everywhere-src-6.8.3
+
+build_qt6_audio qtmultimedia-everywhere-src-6.8.3
+
+echo "done .."

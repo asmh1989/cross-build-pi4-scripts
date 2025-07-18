@@ -1,0 +1,5 @@
+build/
+qt-host/
+qt5/
+rpi-*/
+qt-pi-64/
