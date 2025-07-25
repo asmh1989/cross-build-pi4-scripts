@@ -62,10 +62,11 @@ function build_qt6() {
 }
 
 function build_qt6_2() {
-    # rm -rf $WORK_HOME/$1
+    rm -rf $WORK_HOME/$1
     mkdir $WORK_HOME/$1
     cd $WORK_HOME/$1
-    $PI_DIR/bin/qt-configure-module $ROOT_HOME/qt5/$1
+
+    $PI_DIR/bin/qt-configure-module $ROOT_HOME/qt5/$1 
     cmake --build . --parallel 8
     cmake --install .
 }
@@ -98,6 +99,7 @@ function build_qt6_audio() {
 
 # build_qt6_2 qtcharts-everywhere-src-6.8.3
 
-build_qt6_audio qtmultimedia-everywhere-src-6.8.3
+build_qt6_2 qtconnectivity-everywhere-src-6.8.3
+# build_qt6_audio qtmultimedia-everywhere-src-6.8.3
 
 echo "done .."

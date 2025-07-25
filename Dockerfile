@@ -1,5 +1,4 @@
 FROM docker.1ms.run/debian:bookworm
-RUN apt-get update
 
 # 替换为清华大学的软件源
 # RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
@@ -18,6 +17,8 @@ RUN apt install -y libvulkan-dev vulkan-tools libcups2-dev libwayland-dev libzst
 RUN apt-get install -y gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 
 RUN apt-get install -y libasound2-dev libpulse-dev
+
+RUN apt-get install -y libbluetooth-dev bluez-tools libdbus-1-dev 
 
 # COPY cmake-3.24.1-linux-x86_64.sh /tmp/cmake-install.sh
 # RUN chmod u+x /tmp/cmake-install.sh \

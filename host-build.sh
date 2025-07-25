@@ -49,6 +49,8 @@ function build_qt6_audio(){
 
 # build_qt6_2 qtwayland-everywhere-src-6.8.3
 
-build_qt6_audio qtmultimedia-everywhere-src-6.8.3
+# build_qt6_audio qtmultimedia-everywhere-src-6.8.3
+
+build_qt6_2 qtconnectivity-everywhere-src-6.8.3
 
 echo "done .."
