@@ -8,7 +8,7 @@ fi
 echo "`date` start update server from 192.168.2.${ip} ..."
 echo "开始杀死旧的进程"
 ssh pi@192.168.2.${ip} 'systemctl --user stop aurora_client.service'
-sudo upx -5 emaurora/build/AppEMAurora
+./upx -5 emaurora/build/AppEMAurora
 scp emaurora/build/AppEMAurora pi@192.168.2.${ip}:/home/pi/client
 echo "重新启动进程"
 ssh pi@192.168.2.${ip} 'systemctl --user start aurora_client.service'

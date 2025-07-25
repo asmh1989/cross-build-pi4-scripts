@@ -20,6 +20,8 @@ RUN apt-get install -y libasound2-dev libpulse-dev
 
 RUN apt-get install -y libbluetooth-dev bluez-tools libdbus-1-dev 
 
+RUN apt-get install -y git
+
 # COPY cmake-3.24.1-linux-x86_64.sh /tmp/cmake-install.sh
 # RUN chmod u+x /tmp/cmake-install.sh \
 #     && mkdir /opt/cmake-3.24.1 \
