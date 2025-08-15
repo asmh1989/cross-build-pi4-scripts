@@ -26,14 +26,14 @@ function build_qt6_2(){
 
 build_qt6 qtbase
 
-build_qt6_2 qtshadertools
+# build_qt6_2 qtshadertools
 
-build_qt6_2 qtdeclarative 
+# build_qt6_2 qtdeclarative 
 
-build_qt6_2 qtserialport
+# build_qt6_2 qtserialport
 
-build_qt6_2 qtvirtualkeyboard
+# build_qt6_2 qtvirtualkeyboard
 
-build_qt6_2 qtcharts
+# build_qt6_2 qtcharts
 
 echo "done .."
