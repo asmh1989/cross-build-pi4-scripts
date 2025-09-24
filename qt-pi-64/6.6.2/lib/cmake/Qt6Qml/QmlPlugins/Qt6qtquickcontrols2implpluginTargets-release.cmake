@@ -9,12 +9,12 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set_property(TARGET Qt6::qtquickcontrols2implplugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Qt6::qtquickcontrols2implplugin PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/qml/QtQuick/Controls/impl/libqtquickcontrols2implplugin.so"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/./qml/QtQuick/Controls/impl/libqtquickcontrols2implplugin.so"
   IMPORTED_NO_SONAME_RELEASE "TRUE"
   )
 
 list(APPEND _cmake_import_check_targets Qt6::qtquickcontrols2implplugin )
-list(APPEND _cmake_import_check_files_for_Qt6::qtquickcontrols2implplugin "${_IMPORT_PREFIX}/qml/QtQuick/Controls/impl/libqtquickcontrols2implplugin.so" )
+list(APPEND _cmake_import_check_files_for_Qt6::qtquickcontrols2implplugin "${_IMPORT_PREFIX}/./qml/QtQuick/Controls/impl/libqtquickcontrols2implplugin.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

@@ -9,12 +9,12 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set_property(TARGET Qt6::QQmlInspectorServiceFactoryPlugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Qt6::QQmlInspectorServiceFactoryPlugin PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/plugins/qmltooling/libqmldbg_inspector.so"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/./plugins/qmltooling/libqmldbg_inspector.so"
   IMPORTED_NO_SONAME_RELEASE "TRUE"
   )
 
 list(APPEND _cmake_import_check_targets Qt6::QQmlInspectorServiceFactoryPlugin )
-list(APPEND _cmake_import_check_files_for_Qt6::QQmlInspectorServiceFactoryPlugin "${_IMPORT_PREFIX}/plugins/qmltooling/libqmldbg_inspector.so" )
+list(APPEND _cmake_import_check_files_for_Qt6::QQmlInspectorServiceFactoryPlugin "${_IMPORT_PREFIX}/./plugins/qmltooling/libqmldbg_inspector.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

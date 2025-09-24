@@ -49,6 +49,7 @@
 #include "qimagewriter.h"
 #include "qinputdevice.h"
 #include "qinputmethod.h"
+#include "qinputmethodmanager.h"
 #if QT_CONFIG(shortcut)
 #include "qkeysequence.h"
 #endif

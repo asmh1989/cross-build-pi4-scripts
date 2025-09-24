@@ -74,12 +74,12 @@ endif()
 set(QT_WILL_INSTALL ON CACHE BOOL
     "Boolean indicating if doing a Qt prefix build (vs non-prefix build)." FORCE)
 
-set(QT_SOURCE_TREE "/root/raspi/qt5/qtbase" CACHE PATH
+set(QT_SOURCE_TREE "/root/raspi/qt5/qtbase-everywhere-src-6.6.2" CACHE PATH
 "A path to the source tree of the previously configured QtBase project." FORCE)
 
 # Propagate decision of building tests and examples to other repositories.
-set(QT_BUILD_TESTS FALSE CACHE BOOL "Build the testing tree.")
-set(QT_BUILD_EXAMPLES FALSE CACHE BOOL "Build Qt examples")
+set(QT_BUILD_TESTS OFF CACHE BOOL "Build the testing tree.")
+set(QT_BUILD_EXAMPLES OFF CACHE BOOL "Build Qt examples")
 set(QT_BUILD_BENCHMARKS OFF CACHE BOOL "Build Qt Benchmarks")
 set(QT_BUILD_MANUAL_TESTS OFF CACHE BOOL "Build Qt manual tests")
 set(QT_BUILD_MINIMAL_STATIC_TESTS OFF CACHE BOOL
@@ -194,16 +194,16 @@ set(INSTALL_INCLUDEDIR "include" CACHE STRING "Header files [PREFIX/include]" FO
 set(INSTALL_LIBDIR "lib" CACHE STRING "Libraries [PREFIX/lib]" FORCE)
 set(INSTALL_MKSPECSDIR "mkspecs" CACHE STRING "Mkspecs files [PREFIX/mkspecs]" FORCE)
 set(INSTALL_ARCHDATADIR "." CACHE STRING "Arch-dependent data [PREFIX]" FORCE)
-set(INSTALL_PLUGINSDIR "./plugins" CACHE STRING "Plugins [ARCHDATADIR/plugins]" FORCE)
-set(INSTALL_LIBEXECDIR "./libexec" CACHE STRING "Helper programs [ARCHDATADIR/bin on Windows, ARCHDATADIR/libexec otherwise]" FORCE)
-set(INSTALL_QMLDIR "./qml" CACHE STRING "QML imports [ARCHDATADIR/qml]" FORCE)
+set(INSTALL_PLUGINSDIR "plugins" CACHE STRING "Plugins [ARCHDATADIR/plugins]" FORCE)
+set(INSTALL_LIBEXECDIR "libexec" CACHE STRING "Helper programs [ARCHDATADIR/bin on Windows, ARCHDATADIR/libexec otherwise]" FORCE)
+set(INSTALL_QMLDIR "qml" CACHE STRING "QML imports [ARCHDATADIR/qml]" FORCE)
 set(INSTALL_DATADIR "." CACHE STRING "Arch-independent data [PREFIX]" FORCE)
-set(INSTALL_DOCDIR "./doc" CACHE STRING "Documentation [DATADIR/doc]" FORCE)
-set(INSTALL_TRANSLATIONSDIR "./translations" CACHE STRING "Translations [DATADIR/translations]" FORCE)
+set(INSTALL_DOCDIR "doc" CACHE STRING "Documentation [DATADIR/doc]" FORCE)
+set(INSTALL_TRANSLATIONSDIR "translations" CACHE STRING "Translations [DATADIR/translations]" FORCE)
 set(INSTALL_SYSCONFDIR "etc/xdg" CACHE STRING "Settings used by Qt programs [PREFIX/etc/xdg]/[/Library/Preferences/Qt]" FORCE)
 set(INSTALL_EXAMPLESDIR "examples" CACHE STRING "Examples [PREFIX/examples]" FORCE)
 set(INSTALL_TESTSDIR "tests" CACHE STRING "Tests [PREFIX/tests]" FORCE)
-set(INSTALL_DESCRIPTIONSDIR "./modules" CACHE STRING "Module description files directory" FORCE)
+set(INSTALL_DESCRIPTIONSDIR "modules" CACHE STRING "Module description files directory" FORCE)
 
 set(QT_COPYRIGHT_YEAR "2023" CACHE STRING "")
 set(QT_COPYRIGHT "Copyright (C) 2023 The Qt Company Ltd and other contributors." CACHE STRING "")

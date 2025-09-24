@@ -11,5 +11,5 @@
 // We mean it.
 //
 
-#define QML_COMPILE_HASH "5a4a4a6c960dc8220c3b61f6f2f0d2de366905e5"
+#define QML_COMPILE_HASH "1d65066ac1a3a4a6d2ba6af36f4aa60c059a11bf"
 #define QML_COMPILE_HASH_LENGTH 40

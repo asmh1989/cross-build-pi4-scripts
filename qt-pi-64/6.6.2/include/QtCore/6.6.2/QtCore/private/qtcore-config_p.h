@@ -42,7 +42,7 @@
 
 #define QT_FEATURE_posix_sem 1
 
-#define QT_FEATURE_posix_shm -1
+#define QT_FEATURE_posix_shm 1
 
 #define QT_FEATURE_qqnx_pps -1
 

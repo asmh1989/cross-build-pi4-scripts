@@ -1,4 +1,4 @@
-#define QT_FEATURE_accessibility_atspi_bridge -1
+#define QT_FEATURE_accessibility_atspi_bridge 1
 
 #define QT_FEATURE_directfb -1
 

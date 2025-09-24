@@ -1,5 +1,5 @@
 
-#line 126 "../../../../../qt5/qtdeclarative/src/qml/parser/qqmljs.g"
+#line 126 "../../../../../qt5/qtdeclarative-everywhere-src-6.6.2/src/qml/parser/qqmljs.g"
 // Copyright (C) 2016 The Qt Company Ltd.
 // Contact: https://www.qt.io/licensing/
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
@@ -273,27 +273,27 @@ protected:
 
 
 
-#line 1791 "../../../../../qt5/qtdeclarative/src/qml/parser/qqmljs.g"
+#line 1791 "../../../../../qt5/qtdeclarative-everywhere-src-6.6.2/src/qml/parser/qqmljs.g"
 
 #define J_SCRIPT_REGEXPLITERAL_RULE1 166
 
-#line 1803 "../../../../../qt5/qtdeclarative/src/qml/parser/qqmljs.g"
+#line 1803 "../../../../../qt5/qtdeclarative-everywhere-src-6.6.2/src/qml/parser/qqmljs.g"
 
 #define J_SCRIPT_REGEXPLITERAL_RULE2 167
 
-#line 3424 "../../../../../qt5/qtdeclarative/src/qml/parser/qqmljs.g"
+#line 3424 "../../../../../qt5/qtdeclarative-everywhere-src-6.6.2/src/qml/parser/qqmljs.g"
 
 #define J_SCRIPT_EXPRESSIONSTATEMENTLOOKAHEAD_RULE 468
 
-#line 4076 "../../../../../qt5/qtdeclarative/src/qml/parser/qqmljs.g"
+#line 4076 "../../../../../qt5/qtdeclarative-everywhere-src-6.6.2/src/qml/parser/qqmljs.g"
 
 #define J_SCRIPT_CONCISEBODYLOOKAHEAD_RULE 538
 
-#line 4614 "../../../../../qt5/qtdeclarative/src/qml/parser/qqmljs.g"
+#line 4614 "../../../../../qt5/qtdeclarative-everywhere-src-6.6.2/src/qml/parser/qqmljs.g"
 
 #define J_SCRIPT_EXPORTDECLARATIONLOOKAHEAD_RULE 606
 
-#line 4898 "../../../../../qt5/qtdeclarative/src/qml/parser/qqmljs.g"
+#line 4898 "../../../../../qt5/qtdeclarative-everywhere-src-6.6.2/src/qml/parser/qqmljs.g"
 
 QT_END_NAMESPACE
 

@@ -2,7 +2,7 @@
 ROOT_HOME=$HOME/raspi
 
 QT_SRC=$ROOT_HOME/qt5
-version=`cd $QT_SRC && git branch --show-current`
+version=6.6.2
 HOST_DIR=$ROOT_HOME/qt-host/$version
 WORK_HOME=$ROOT_HOME/build/host-$version
 # rm -rf $WORK_HOME
@@ -24,16 +24,16 @@ function build_qt6_2(){
     cmake --install .
 }
 
-build_qt6 qtbase
+build_qt6 qtbase-everywhere-src-6.6.2
 
-# build_qt6_2 qtshadertools
+# build_qt6_2 qtshadertools-everywhere-src-6.6.2
 
-# build_qt6_2 qtdeclarative 
+# build_qt6_2 qtdeclarative-everywhere-src-6.6.2
 
-# build_qt6_2 qtserialport
+# build_qt6_2 qtserialport-everywhere-src-6.6.2
 
-# build_qt6_2 qtvirtualkeyboard
+# build_qt6_2 qtvirtualkeyboard-everywhere-src-6.6.2
 
-# build_qt6_2 qtcharts
+# build_qt6_2 qtcharts-everywhere-src-6.6.2
 
 echo "done .."

@@ -92,9 +92,9 @@
 
 #define QT_FEATURE_stdlib_libcpp -1
 
-#define QT_FEATURE_dbus -1
+#define QT_FEATURE_dbus 1
 
-#define QT_FEATURE_dbus_linked -1
+#define QT_FEATURE_dbus_linked 1
 
 #define QT_FEATURE_gui 1
 

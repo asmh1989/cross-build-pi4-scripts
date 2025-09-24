@@ -19,11 +19,11 @@ list(APPEND _cmake_import_check_files_for_Qt6::QuickControlsTestUtilsPrivate "${
 set_property(TARGET Qt6::QuickControlsTestUtilsPrivate_resources_1 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Qt6::QuickControlsTestUtilsPrivate_resources_1 PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
-  IMPORTED_OBJECTS_RELEASE "${_IMPORT_PREFIX}/qml/Qt/test/controls/objects-Release/QuickControlsTestUtilsPrivate_resources_1/.rcc/qrc_qmake_Qt_test_controls.cpp.o"
+  IMPORTED_OBJECTS_RELEASE "${_IMPORT_PREFIX}/./qml/Qt/test/controls/objects-Release/QuickControlsTestUtilsPrivate_resources_1/.rcc/qrc_qmake_Qt_test_controls.cpp.o"
   )
 
 list(APPEND _cmake_import_check_targets Qt6::QuickControlsTestUtilsPrivate_resources_1 )
-list(APPEND _cmake_import_check_files_for_Qt6::QuickControlsTestUtilsPrivate_resources_1 "${_IMPORT_PREFIX}/qml/Qt/test/controls/objects-Release/QuickControlsTestUtilsPrivate_resources_1/.rcc/qrc_qmake_Qt_test_controls.cpp.o" )
+list(APPEND _cmake_import_check_files_for_Qt6::QuickControlsTestUtilsPrivate_resources_1 "${_IMPORT_PREFIX}/./qml/Qt/test/controls/objects-Release/QuickControlsTestUtilsPrivate_resources_1/.rcc/qrc_qmake_Qt_test_controls.cpp.o" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

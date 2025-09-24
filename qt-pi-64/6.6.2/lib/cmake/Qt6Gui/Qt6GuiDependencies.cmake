@@ -34,10 +34,10 @@ set(__qt_Gui_tool_deps "")
 _qt_internal_find_tool_dependencies("Gui" __qt_Gui_tool_deps)
 
 # note: target_deps example: "Qt6Core\;5.12.0;Qt6Gui\;5.12.0"
-set(__qt_Gui_target_deps "Qt6Core\;6.6.2")
+set(__qt_Gui_target_deps "Qt6Core\;6.6.2;Qt6DBus\;6.6.2")
 set(__qt_Gui_find_dependency_paths "${CMAKE_CURRENT_LIST_DIR}/.." "${_qt_cmake_dir}")
 _qt_internal_find_qt_dependencies("Gui" __qt_Gui_target_deps
                                   __qt_Gui_find_dependency_paths)
 
-set(_Qt6Gui_MODULE_DEPENDENCIES "Core")
+set(_Qt6Gui_MODULE_DEPENDENCIES "Core;DBus")
 set(Qt6Gui_FOUND TRUE)

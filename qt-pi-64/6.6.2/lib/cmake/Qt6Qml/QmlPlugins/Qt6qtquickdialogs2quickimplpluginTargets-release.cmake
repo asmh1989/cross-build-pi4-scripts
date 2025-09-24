@@ -9,12 +9,12 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set_property(TARGET Qt6::qtquickdialogs2quickimplplugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Qt6::qtquickdialogs2quickimplplugin PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/qml/QtQuick/Dialogs/quickimpl/libqtquickdialogs2quickimplplugin.so"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/./qml/QtQuick/Dialogs/quickimpl/libqtquickdialogs2quickimplplugin.so"
   IMPORTED_NO_SONAME_RELEASE "TRUE"
   )
 
 list(APPEND _cmake_import_check_targets Qt6::qtquickdialogs2quickimplplugin )
-list(APPEND _cmake_import_check_files_for_Qt6::qtquickdialogs2quickimplplugin "${_IMPORT_PREFIX}/qml/QtQuick/Dialogs/quickimpl/libqtquickdialogs2quickimplplugin.so" )
+list(APPEND _cmake_import_check_files_for_Qt6::qtquickdialogs2quickimplplugin "${_IMPORT_PREFIX}/./qml/QtQuick/Dialogs/quickimpl/libqtquickdialogs2quickimplplugin.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

@@ -1,3 +1,5 @@
 # rsync -avz --rsync-path="sudo rsync" $HOME/raspi/qt-pi-64/6.5.3/* pi@192.168.2.184:/usr/local/qt6
-rsync -avz --rsync-path="sudo rsync" /home/sun/git/pi-gen/stage3/02-custom/files/qt6/* pi@192.168.2.$1:/usr/local/qt6
+# rsync -avz --rsync-path="sudo rsync" /home/sun/git/pi-gen/stage3/02-custom/files/qt6/* pi@192.168.2.$1:/usr/local/qt6
 #rsync -avz --rsync-path="sudo rsync" $HOME/raspi/qt-pi-64/6.9.1/* pi@192.168.2.$1:/usr/local/qt6
+
+rsync -avz --rsync-path="sudo rsync" $HOME/raspi/qt-pi-64/6.6.2/* pi@192.168.2.$1:/usr/local/qt6

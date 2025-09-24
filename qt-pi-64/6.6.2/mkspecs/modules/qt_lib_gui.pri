@@ -8,12 +8,13 @@ QT.gui.frameworks =
 QT.gui.bins = $$QT_MODULE_BIN_BASE
 QT.gui.plugin_types = accessiblebridge platforms platforms/darwin xcbglintegrations platformthemes platforminputcontexts generic iconengines imageformats egldeviceintegrations
 QT.gui.depends =  core
+QT.gui.run_depends = dbus
 QT.gui.uses = opengl_es2
 QT.gui.module_config = v2
 QT.gui.CONFIG = opengl
 QT.gui.DEFINES = QT_GUI_LIB
-QT.gui.enabled_features = freetype fontconfig harfbuzz opengles2 opengles3 opengles31 opengles32 opengl egl ico sessionmanager xcb texthtmlparser textmarkdownreader textmarkdownwriter textodfwriter cssparser draganddrop action cursor clipboard wheelevent tabletevent im highdpiscaling validator standarditemmodel filesystemmodel imageformatplugin movie imageformat_bmp imageformat_ppm imageformat_xbm imageformat_xpm imageformat_png imageformat_jpeg image_heuristic_mask image_text picture colornames pdf desktopservices systemtrayicon accessibility whatsthis undocommand undostack undogroup gbm kms opengles2
-QT.gui.disabled_features = accessibility-atspi-bridge dynamicgl vulkan openvg xcb-glx-plugin system-textmarkdownreader
-QT_CONFIG += freetype fontconfig harfbuzz opengles2 opengles3 opengles31 opengles32 opengl egl ico sessionmanager xcb texthtmlparser textmarkdownreader textmarkdownwriter textodfwriter cssparser draganddrop action cursor clipboard wheelevent tabletevent im highdpiscaling validator standarditemmodel filesystemmodel imageformatplugin movie imageformat_bmp imageformat_ppm imageformat_xbm imageformat_xpm imageformat_png imageformat_jpeg image_heuristic_mask image_text picture colornames pdf desktopservices systemtrayicon accessibility whatsthis undocommand undostack undogroup gbm kms opengles2
+QT.gui.enabled_features = accessibility-atspi-bridge freetype fontconfig harfbuzz opengles2 opengles3 opengles31 opengles32 opengl egl ico sessionmanager xcb texthtmlparser textmarkdownreader textmarkdownwriter textodfwriter cssparser draganddrop action cursor clipboard wheelevent tabletevent im highdpiscaling validator standarditemmodel filesystemmodel imageformatplugin movie imageformat_bmp imageformat_ppm imageformat_xbm imageformat_xpm imageformat_png imageformat_jpeg image_heuristic_mask image_text picture colornames pdf desktopservices systemtrayicon accessibility whatsthis undocommand undostack undogroup gbm kms opengles2
+QT.gui.disabled_features = dynamicgl vulkan openvg xcb-glx-plugin system-textmarkdownreader
+QT_CONFIG += accessibility-atspi-bridge freetype fontconfig harfbuzz opengles2 opengles3 opengles31 opengles32 opengl egl ico sessionmanager xcb texthtmlparser textmarkdownreader textmarkdownwriter textodfwriter cssparser draganddrop action cursor clipboard wheelevent tabletevent im highdpiscaling validator standarditemmodel filesystemmodel imageformatplugin movie imageformat_bmp imageformat_ppm imageformat_xbm imageformat_xpm imageformat_png imageformat_jpeg image_heuristic_mask image_text picture colornames pdf desktopservices systemtrayicon accessibility whatsthis undocommand undostack undogroup gbm kms opengles2
 QT_MODULES += gui
 

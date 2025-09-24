@@ -6,6 +6,10 @@
 
 #include <QtGui/qtguiglobal.h>
 #include <QtCore/qobject.h>
+#include <QtCore/qrect.h>
+#include <QtCore/qlocale.h>
+#include <QtCore/qvariant.h>
+#include <QtGui/qevent.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -13,6 +17,7 @@ class QInputMethodPrivate;
 class QWindow;
 class QRectF;
 class QTransform;
+class QPlatformInputContext;
 class QInputMethodQueryEvent;
 
 class Q_GUI_EXPORT QInputMethod : public QObject
@@ -28,6 +33,8 @@ class Q_GUI_EXPORT QInputMethod : public QObject
     Q_PROPERTY(bool animating READ isAnimating NOTIFY animatingChanged)
     Q_PROPERTY(QLocale locale READ locale NOTIFY localeChanged)
     Q_PROPERTY(Qt::LayoutDirection inputDirection READ inputDirection NOTIFY inputDirectionChanged)
+    Q_PROPERTY(QStringList availableInputMethods READ availableInputMethods NOTIFY availableInputMethodsChanged)
+    Q_PROPERTY(QString currentInputMethod READ currentInputMethod NOTIFY currentInputMethodChanged)
 
 public:
     QTransform inputItemTransform() const;
@@ -59,6 +66,9 @@ public:
     QLocale locale() const;
     Qt::LayoutDirection inputDirection() const;
 
+    QStringList availableInputMethods() const;
+    QString currentInputMethod() const;
+
     static QVariant queryFocusObject(Qt::InputMethodQuery query, const QVariant &argument);
 
 public Q_SLOTS:
@@ -70,6 +80,7 @@ public Q_SLOTS:
     void commit();
 
     void invokeAction(Action a, int cursorPosition);
+    void switchInputMethod(const QString &methodKey);
 
 Q_SIGNALS:
     void cursorRectangleChanged();
@@ -80,6 +91,8 @@ Q_SIGNALS:
     void animatingChanged();
     void localeChanged();
     void inputDirectionChanged(Qt::LayoutDirection newDirection);
+    void availableInputMethodsChanged();
+    void currentInputMethodChanged(const QString &methodKey);
 
 private:
     friend class QGuiApplication;

@@ -44,7 +44,7 @@
 
 #define QT_FEATURE_concurrent 1
 
-#define QT_FEATURE_dbus -1
+#define QT_FEATURE_dbus 1
 
 #define QT_FEATURE_openssl_linked -1
 
@@ -63,4 +63,3 @@
 #define QT_LARGEFILE_SUPPORT 64
 #define QT_VISIBILITY_AVAILABLE
 #define QT_COMPILER_SUPPORTS_NEON 1
-#define QT_NO_DBUS 1

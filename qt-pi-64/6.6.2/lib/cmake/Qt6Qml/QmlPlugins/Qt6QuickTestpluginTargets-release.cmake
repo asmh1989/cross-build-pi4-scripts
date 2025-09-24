@@ -9,12 +9,12 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set_property(TARGET Qt6::QuickTestplugin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Qt6::QuickTestplugin PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/qml/QtTest/libquicktestplugin.so"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/./qml/QtTest/libquicktestplugin.so"
   IMPORTED_NO_SONAME_RELEASE "TRUE"
   )
 
 list(APPEND _cmake_import_check_targets Qt6::QuickTestplugin )
-list(APPEND _cmake_import_check_files_for_Qt6::QuickTestplugin "${_IMPORT_PREFIX}/qml/QtTest/libquicktestplugin.so" )
+list(APPEND _cmake_import_check_files_for_Qt6::QuickTestplugin "${_IMPORT_PREFIX}/./qml/QtTest/libquicktestplugin.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

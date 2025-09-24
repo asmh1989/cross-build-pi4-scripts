@@ -1,4 +1,4 @@
-#define QT_FEATURE_accessibility_atspi_bridge -1
+#define QT_FEATURE_accessibility_atspi_bridge 1
 
 #define QT_FEATURE_freetype 1
 
@@ -106,4 +106,3 @@
 
 #define QT_FEATURE_undogroup 1
 
-#define QT_NO_ACCESSIBILITY_ATSPI_BRIDGE 1

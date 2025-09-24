@@ -23,6 +23,7 @@
 #include <qpa/qplatforminputcontext.h>
 #include <qpa/qplatformintegration.h>
 #include <private/qguiapplication_p.h>
+#include <qinputmethodmanager.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -35,6 +36,26 @@ public:
     {}
     QPlatformInputContext *platformInputContext() const
     {
+        // 首先尝试使用输入法管理器
+        QInputMethodManager *manager = QInputMethodManager::instance();
+        if (manager) {
+            auto key = QStringLiteral("qtvirtualkeyboard");
+            if (manager->contains(key)) {
+                QPlatformInputContext *context = manager->currentInputContext();
+                if (context && context->isValid()) {
+                    return context;
+                }
+            } else {
+                qDebug() << "QInputMethodPrivate::platformInputContext: input method <qtvirtualkeyboard> not found, first add";
+                auto context = QGuiApplicationPrivate::platformIntegration()->inputContext();
+                if (context && context->isValid()) {
+                    manager->addInputMethod(key, context);
+                    return context;
+                }
+            }
+        }
+        
+        // 如果输入法管理器不可用，回退到默认实现
         return testContext ? testContext : QGuiApplicationPrivate::platformIntegration()->inputContext();
     }
     static inline QInputMethodPrivate *get(QInputMethod *inputMethod)
